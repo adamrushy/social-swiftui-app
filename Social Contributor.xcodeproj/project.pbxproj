@@ -15,6 +15,7 @@
 		D3CE07E22823203300616F6C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D3CE07E12823203300616F6C /* Lottie */; };
 		D3CE07E42823204B00616F6C /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE07E32823204B00616F6C /* LottieView.swift */; };
 		D3CE07E62823296A00616F6C /* View+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE07E52823296A00616F6C /* View+Theme.swift */; };
+		D3CE07E92823336300616F6C /* MuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE07E82823336300616F6C /* MuseViewModel.swift */; };
 		E334B3772822D5BD002E9640 /* Social_ContributorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E334B3762822D5BD002E9640 /* Social_ContributorApp.swift */; };
 		E334B3792822D5BD002E9640 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E334B3782822D5BD002E9640 /* ContentView.swift */; };
 		E334B37B2822D5BE002E9640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E334B37A2822D5BE002E9640 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		D3CE07DE28231F8C00616F6C /* no-results-found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "no-results-found.json"; sourceTree = "<group>"; };
 		D3CE07E32823204B00616F6C /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		D3CE07E52823296A00616F6C /* View+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Theme.swift"; sourceTree = "<group>"; };
+		D3CE07E82823336300616F6C /* MuseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseViewModel.swift; sourceTree = "<group>"; };
 		E334B3732822D5BD002E9640 /* Social Contributor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Contributor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E334B3762822D5BD002E9640 /* Social_ContributorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social_ContributorApp.swift; sourceTree = "<group>"; };
 		E334B3782822D5BD002E9640 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,15 @@
 				5C66C0942822ECDA00B66FF8 /* PersistenceController.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D3CE07E72823334C00616F6C /* MuseView */ = {
+			isa = PBXGroup;
+			children = (
+				0AD87B86282307FA00904E4E /* MuseView.swift */,
+				D3CE07E82823336300616F6C /* MuseViewModel.swift */,
+			);
+			path = MuseView;
 			sourceTree = "<group>";
 		};
 		E334B36A2822D5BD002E9640 = {
@@ -107,7 +118,7 @@
 			children = (
 				FA0DC4302822F3D5009AC9CC /* SettingsView.swift */,
 				FA0DC4322822F4E3009AC9CC /* SettingsLabelStyle.swift */,
-				0AD87B86282307FA00904E4E /* MuseView.swift */,
+				D3CE07E72823334C00616F6C /* MuseView */,
 				D3CE07E32823204B00616F6C /* LottieView.swift */,
 			);
 			path = Screens;
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA0DC4312822F3D5009AC9CC /* SettingsView.swift in Sources */,
+				D3CE07E92823336300616F6C /* MuseViewModel.swift in Sources */,
 				D3CE07DD2823102600616F6C /* URLSession+APICall.swift in Sources */,
 				D3CE07E62823296A00616F6C /* View+Theme.swift in Sources */,
 				FA0DC4362822F730009AC9CC /* String+BuildInfo.swift in Sources */,
