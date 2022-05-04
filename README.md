@@ -1,5 +1,7 @@
 # SwiftUI Social Contributor App
 
+![alt text](https://github.com/adamrushy/social-swiftui-app/blob/main/banner.png)
+
 Learning SwiftUI can often be difficult or confusing and despite the many tutorials available it's often practice that will help with your learning.
 
 ## What is this repository?
