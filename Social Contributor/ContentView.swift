@@ -3,14 +3,24 @@
 //  Social Contributor
 //
 //  Created by Adam Rush on 04/05/2022.
+//  Edited by Florian Schweizer on 04/05/2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+            Text("Hello, Home!")
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            Text("Hello, Settings!")
+                .tabItem {
+                    Label("Settings", systemImage: "gearshape")
+                }
+        }
     }
 }
 
