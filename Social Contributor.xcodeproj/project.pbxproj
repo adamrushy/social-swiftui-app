@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD87B87282307FA00904E4E /* MuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD87B86282307FA00904E4E /* MuseView.swift */; };
 		5C66C0932822ECCE00B66FF8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C66C0912822ECCE00B66FF8 /* Model.xcdatamodeld */; };
 		5C66C0952822ECDA00B66FF8 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C66C0942822ECDA00B66FF8 /* PersistenceController.swift */; };
 		E334B3772822D5BD002E9640 /* Social_ContributorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E334B3762822D5BD002E9640 /* Social_ContributorApp.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AD87B86282307FA00904E4E /* MuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseView.swift; sourceTree = "<group>"; };
 		5C66C0922822ECCE00B66FF8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5C66C0942822ECDA00B66FF8 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		E334B3732822D5BD002E9640 /* Social Contributor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Contributor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 			children = (
 				FA0DC4302822F3D5009AC9CC /* SettingsView.swift */,
 				FA0DC4322822F4E3009AC9CC /* SettingsLabelStyle.swift */,
+				0AD87B86282307FA00904E4E /* MuseView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				E334B3772822D5BD002E9640 /* Social_ContributorApp.swift in Sources */,
 				5C66C0932822ECCE00B66FF8 /* Model.xcdatamodeld in Sources */,
 				5C66C0952822ECDA00B66FF8 /* PersistenceController.swift in Sources */,
+				0AD87B87282307FA00904E4E /* MuseView.swift in Sources */,
 				FA0DC4332822F4E3009AC9CC /* SettingsLabelStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +318,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Social Contributer uses Music access to play music and create a pleasant experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,6 +348,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Social Contributer uses Music access to play music and create a pleasant experience.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
