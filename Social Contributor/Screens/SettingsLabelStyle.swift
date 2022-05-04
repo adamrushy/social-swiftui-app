@@ -47,14 +47,25 @@ struct SettingsLabelStyle: LabelStyle {
 
 struct SettingsLabelStyle_Previews: PreviewProvider {
     static var previews: some View {
-        List {
-            Label("Contribute", systemImage: "person.badge.plus")
-                .labelStyle(SettingsLabelStyle(backgroundColor: .orange))
-            Label("Help", systemImage: "questionmark.circle.fill")
-                .labelStyle(SettingsLabelStyle(backgroundColor: .blue))
-            Label("Contact", systemImage: "mail")
-                .labelStyle(SettingsLabelStyle(backgroundColor: .pink))
-        }
+		Group {
+			List {
+				Label("Contribute", systemImage: "person.badge.plus")
+					.labelStyle(SettingsLabelStyle(backgroundColor: .orange))
+				Label("Help", systemImage: "questionmark.circle.fill")
+					.labelStyle(SettingsLabelStyle(backgroundColor: .blue))
+				Label("Contact", systemImage: "mail")
+					.labelStyle(SettingsLabelStyle(backgroundColor: .pink))
+			}
+
+			List {
+				Label("Contribute", systemImage: "person.badge.plus")
+					.labelStyle(SettingsLabelStyle(backgroundColor: .orange))
+				Label("Help", systemImage: "questionmark.circle.fill")
+					.labelStyle(SettingsLabelStyle(backgroundColor: .blue))
+				Label("Contact", systemImage: "mail")
+					.labelStyle(SettingsLabelStyle(backgroundColor: .pink))
+			}.darkMode()
+		}
     }
 }
 
