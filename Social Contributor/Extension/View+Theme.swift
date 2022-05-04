@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import SwiftUI
+
+extension View {
+	// Force Dark Mode
+	func darkMode() -> some View {
+		self.preferredColorScheme(.dark)
+	}
+	
+	// Force Light mode Mode
+	func lightMode() -> some View {
+		self.preferredColorScheme(.light)
+	}
+}
