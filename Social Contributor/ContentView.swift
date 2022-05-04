@@ -7,25 +7,36 @@
 //
 
 import SwiftUI
+import MusicKit
 
 struct ContentView: View {
+    @State private var showMuseView = false
+
     var body: some View {
         TabView {
             Text("Hello, Home!")
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            
+
+            if showMuseView {
+                MuseView()
+                    .tabItem {
+                        Label("Muse", systemImage: "wand.and.stars.inverse")
+                    }
+            }
+
             SettingsView()
                 .tabItem {
                     Label("Settings", systemImage: "gearshape")
                 }
         }
-    }
-}
+        .task {
+            let status = await MusicAuthorization.request()
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+            if status == .authorized {
+                showMuseView.toggle()
+            }
+        }
     }
 }
