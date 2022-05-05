@@ -8,16 +8,51 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    @EnvironmentObject var colorSchemeManager: AppColorSchemeManager
+    
     var body: some View {
         NavigationView {
             List {
-                aboutSection
-                contributionSection
+                general
+                about
+                contribution
             }
             .navigationTitle(Text("Settings"))
         }
     }
-    private var contributionSection: some View {
+
+}
+
+struct SettingsView_Previews: PreviewProvider {
+    static var previews: some View {
+		Group {
+			SettingsView()
+
+			SettingsView()
+				.darkMode()
+		}
+        .environmentObject(AppColorSchemeManager())
+    }
+}
+ 
+private extension SettingsView {
+    
+    var general: some View {
+        Section("General") {
+            
+            Picker(selection: $colorSchemeManager.colorScheme) {
+                ForEach(AppColorScheme.allCases) { item in
+                    Text(item.title)
+                        .tag(item.rawValue)
+                }
+            } label: {
+                Text("App Theme")
+            }
+        }
+    }
+    
+    var contribution: some View {
         Section(content: {
             Button(action: {
                 guard let githubUrl = URL(string: "https://github.com/adamrushy/social-swiftui-app") else {
@@ -37,21 +72,10 @@ struct SettingsView: View {
         })
     }
 
-    private var aboutSection: some View {
+    var about: some View {
         Section("About") {
             Label("Version " + String.basicBuildInfo(), systemImage: "terminal.fill")
                 .labelStyle(SettingsLabelStyle(backgroundColor: .blue))
         }
-    }
-}
-
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-		Group {
-			SettingsView()
-
-			SettingsView()
-				.darkMode()
-		}
     }
 }
