@@ -12,7 +12,10 @@ We might end up building a brand new social bank, social media or chat forum or 
 
 ## How To Contribute?
 
-- Start by cloning the repository
+- Fork the repository to your profile
+- Clone the repository to your machine
+- Install SwiftLint to your machine with [Homebrew](https://brew.sh/)
+   - `brew install swiftlint`
 - Create a new branch
 - Add some SwiftUI code 🔥
 - Create a PR
