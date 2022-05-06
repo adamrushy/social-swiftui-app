@@ -13,7 +13,7 @@ extension View {
 	func darkMode() -> some View {
 		self.preferredColorScheme(.dark)
 	}
-	
+    
 	// Force Light mode Mode
 	func lightMode() -> some View {
 		self.preferredColorScheme(.light)

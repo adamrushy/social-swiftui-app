@@ -3,6 +3,7 @@ disabled_rules: # rule identifiers turned on by default to exclude from running
   - colon
   - comma
   - control_statement
+  - trailing_whitespace
 opt_in_rules: # some rules are turned off by default, so you need to opt-in
   - empty_count # Find all the available rules by running: `swiftlint rules`
 
@@ -54,4 +55,5 @@ identifier_name:
     - id
     - URL
     - GlobalAPIKey
+    - url
 reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, codeclimate, junit, html, emoji, sonarqube, markdown, github-actions-logging)

@@ -60,7 +60,9 @@ private extension SettingsView {
                 }
                 UIApplication.shared.open(githubUrl)
             }, label: {
-                NavigationLink(destination: { EmptyView() }){
+                NavigationLink {
+                    EmptyView()
+                } label: {
                     Label("Github", systemImage: "chevron.left.forwardslash.chevron.right")
                         .labelStyle(SettingsLabelStyle(backgroundColor: .black.opacity(0.7)))
                 }
