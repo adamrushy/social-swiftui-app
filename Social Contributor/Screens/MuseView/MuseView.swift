@@ -39,9 +39,11 @@ struct MuseView: View {
                 } else {
 					List {
 						ForEach(viewModel.tracks) { track in
-							Button(action: { viewModel.play(track) }) {
-								trackRow(track)
-							}
+                            Button {
+                                viewModel.play(track)
+                            } label: {
+                                trackRow(track)
+                            }
 							.buttonStyle(.plain)
 						}
 					}

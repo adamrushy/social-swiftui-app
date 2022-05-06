@@ -36,7 +36,8 @@ extension AppColorScheme: CaseIterable { }
 
 final class AppColorSchemeManager: ObservableObject {
     
-    @AppStorage("currentColorScheme") var colorScheme: Int = AppColorScheme.allCases.first!.rawValue // Force unwrap YOLO 🤪
+    @AppStorage("currentColorScheme")
+    var colorScheme: Int = AppColorScheme.allCases.first!.rawValue // Force unwrap YOLO 🤪
     
     var currentScheme: ColorScheme? {
         guard let scheme = AppColorScheme(rawValue: colorScheme) else { return nil }

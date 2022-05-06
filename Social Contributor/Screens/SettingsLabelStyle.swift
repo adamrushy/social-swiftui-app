@@ -68,4 +68,3 @@ struct SettingsLabelStyle_Previews: PreviewProvider {
 		}
     }
 }
-
