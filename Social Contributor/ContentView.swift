@@ -30,6 +30,14 @@ struct ContentView: View {
                 .tabItem {
                     Label("Settings", systemImage: "gearshape")
                 }
+                .onAppear {
+                    /*
+                     This can be called on any view that would be
+                     appropriate for presenting a Review Request once the
+                     threshold has been met.
+                     */
+                    AppReviewRequest.requestReviewIfNeeded()
+                }
         }
         .task {
             await musicKitAuthentication()
