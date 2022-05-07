@@ -10,6 +10,7 @@
 		0AD87B87282307FA00904E4E /* MuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD87B86282307FA00904E4E /* MuseView.swift */; };
 		5C66C0932822ECCE00B66FF8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C66C0912822ECCE00B66FF8 /* Model.xcdatamodeld */; };
 		5C66C0952822ECDA00B66FF8 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C66C0942822ECDA00B66FF8 /* PersistenceController.swift */; };
+		BB3B3A952826DCBC0046DC4B /* AppReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B3A942826DCBC0046DC4B /* AppReviewRequest.swift */; };
 		D3CE07DD2823102600616F6C /* URLSession+APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE07DC2823102600616F6C /* URLSession+APICall.swift */; };
 		D3CE07DF28231F8C00616F6C /* no-results-found.json in Resources */ = {isa = PBXBuildFile; fileRef = D3CE07DE28231F8C00616F6C /* no-results-found.json */; };
 		D3CE07E22823203300616F6C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = D3CE07E12823203300616F6C /* Lottie */; };
@@ -41,6 +42,7 @@
 		0AD87B86282307FA00904E4E /* MuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseView.swift; sourceTree = "<group>"; };
 		5C66C0922822ECCE00B66FF8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5C66C0942822ECDA00B66FF8 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		BB3B3A942826DCBC0046DC4B /* AppReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewRequest.swift; sourceTree = "<group>"; };
 		D3CE07DC2823102600616F6C /* URLSession+APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+APICall.swift"; sourceTree = "<group>"; };
 		D3CE07DE28231F8C00616F6C /* no-results-found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "no-results-found.json"; sourceTree = "<group>"; };
 		D3CE07E32823204B00616F6C /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				E334B37A2822D5BE002E9640 /* Assets.xcassets */,
 				D3CE07DE28231F8C00616F6C /* no-results-found.json */,
 				E334B37C2822D5BE002E9640 /* Preview Content */,
+				BB3B3A942826DCBC0046DC4B /* AppReviewRequest.swift */,
 			);
 			path = "Social Contributor";
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				D3CE07E62823296A00616F6C /* View+Theme.swift in Sources */,
 				FA0DC4362822F730009AC9CC /* String+BuildInfo.swift in Sources */,
 				E334B3792822D5BD002E9640 /* ContentView.swift in Sources */,
+				BB3B3A952826DCBC0046DC4B /* AppReviewRequest.swift in Sources */,
 				E334B3772822D5BD002E9640 /* Social_ContributorApp.swift in Sources */,
 				5C66C0932822ECCE00B66FF8 /* Model.xcdatamodeld in Sources */,
 				5C66C0952822ECDA00B66FF8 /* PersistenceController.swift in Sources */,
