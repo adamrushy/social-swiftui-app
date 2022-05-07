@@ -16,6 +16,10 @@ struct Social_ContributorApp: App {
     
     var body: some Scene {
         WindowGroup {
+            
+            // This will silence the constraints errors displayed on the output window
+            let _ = UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+            
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(colorSchemeManager)
