@@ -32,22 +32,39 @@ struct ContentView: View {
                 }
         }
         .task {
+            await musicKitAuthentication()
+        }
+    }
+}
+
+extension ContentView {
+    private func musicKitAuthentication() async {
+        do {
+            // Fetch  developer token to see if the current device is simulator or real device.
+            _ = try await MusicDataRequest.tokenProvider.developerToken(options: .ignoreCache)
+
             let status = await MusicAuthorization.request()
 
             if status == .authorized {
-                showMuseView.toggle()
+                showMuseView = true
+            } else {
+                // If permission is anything other than `authorized`, do not show `MuseView`.
+                showMuseView = false
             }
+        } catch {
+            // If the device is a simulator, do not show `MuseView`.
+            showMuseView = false
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		Group {
-			ContentView()
+    static var previews: some View {
+        Group {
+            ContentView()
 
-			ContentView()
-				.darkMode()
-		}
-	}
+            ContentView()
+                .darkMode()
+        }
+    }
 }
