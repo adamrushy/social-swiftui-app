@@ -9,11 +9,11 @@ import SwiftUI
 
 struct NewsLetterListView: View {
     
-    @StateObject private var vm = NewsLetterListViewModel()
+    @StateObject private var viewModel = NewsLetterListViewModel()
     
     var body: some View {
         
-        List(vm.newsLetters) { newsLetter in
+        List(viewModel.newsLetters) { newsLetter in
             HStack {
                 Link(newsLetter.name, destination: newsLetter.url)
                 Spacer() 
@@ -24,7 +24,7 @@ struct NewsLetterListView: View {
         .embedInNavigationView()
         .listStyle(.plain)
         .onAppear {
-            vm.populateAllNewsLetters()
+            viewModel.populateAllNewsLetters()
         }
     }
 }
