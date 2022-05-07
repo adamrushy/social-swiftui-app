@@ -10,6 +10,13 @@
 		0AD87B87282307FA00904E4E /* MuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD87B86282307FA00904E4E /* MuseView.swift */; };
 		5C66C0932822ECCE00B66FF8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C66C0912822ECCE00B66FF8 /* Model.xcdatamodeld */; };
 		5C66C0952822ECDA00B66FF8 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C66C0942822ECDA00B66FF8 /* PersistenceController.swift */; };
+		8DA05DA3282703A40005A514 /* NewsLetterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA05DA2282703A40005A514 /* NewsLetterListView.swift */; };
+		8DA05DA7282704200005A514 /* NewsLetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA05DA6282704200005A514 /* NewsLetter.swift */; };
+		8DA05DAA282704490005A514 /* NewsLetterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA05DA9282704490005A514 /* NewsLetterService.swift */; };
+		8DA05DAD2827048C0005A514 /* newsletters.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DA05DAC2827048C0005A514 /* newsletters.json */; };
+		8DA05DAF282705590005A514 /* NewsLetterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA05DAE282705590005A514 /* NewsLetterListViewModel.swift */; };
+		8DA05DB1282709170005A514 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA05DB0282709170005A514 /* View+Extensions.swift */; };
+		8DA05DB428270A4D0005A514 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA05DB328270A4D0005A514 /* Constants.swift */; };
 		BB3B3A952826DCBC0046DC4B /* AppReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3B3A942826DCBC0046DC4B /* AppReviewRequest.swift */; };
 		D3CE07DD2823102600616F6C /* URLSession+APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CE07DC2823102600616F6C /* URLSession+APICall.swift */; };
 		D3CE07DF28231F8C00616F6C /* no-results-found.json in Resources */ = {isa = PBXBuildFile; fileRef = D3CE07DE28231F8C00616F6C /* no-results-found.json */; };
@@ -42,6 +49,13 @@
 		0AD87B86282307FA00904E4E /* MuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseView.swift; sourceTree = "<group>"; };
 		5C66C0922822ECCE00B66FF8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		5C66C0942822ECDA00B66FF8 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		8DA05DA2282703A40005A514 /* NewsLetterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLetterListView.swift; sourceTree = "<group>"; };
+		8DA05DA6282704200005A514 /* NewsLetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLetter.swift; sourceTree = "<group>"; };
+		8DA05DA9282704490005A514 /* NewsLetterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLetterService.swift; sourceTree = "<group>"; };
+		8DA05DAC2827048C0005A514 /* newsletters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = newsletters.json; sourceTree = "<group>"; };
+		8DA05DAE282705590005A514 /* NewsLetterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsLetterListViewModel.swift; sourceTree = "<group>"; };
+		8DA05DB0282709170005A514 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		8DA05DB328270A4D0005A514 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BB3B3A942826DCBC0046DC4B /* AppReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewRequest.swift; sourceTree = "<group>"; };
 		D3CE07DC2823102600616F6C /* URLSession+APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+APICall.swift"; sourceTree = "<group>"; };
 		D3CE07DE28231F8C00616F6C /* no-results-found.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "no-results-found.json"; sourceTree = "<group>"; };
@@ -89,6 +103,46 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		8DA05DA42827040D0005A514 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DA05DA6282704200005A514 /* NewsLetter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DA05DA5282704130005A514 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DA05DAE282705590005A514 /* NewsLetterListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		8DA05DA82827043C0005A514 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8DA05DA9282704490005A514 /* NewsLetterService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8DA05DAB282704790005A514 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DA05DAC2827048C0005A514 /* newsletters.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8DA05DB228270A440005A514 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8DA05DB328270A4D0005A514 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D3CE07E72823334C00616F6C /* MuseView */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +173,11 @@
 		E334B3752822D5BD002E9640 /* Social Contributor */ = {
 			isa = PBXGroup;
 			children = (
+				8DA05DB228270A440005A514 /* Utils */,
+				8DA05DAB282704790005A514 /* Resources */,
+				8DA05DA82827043C0005A514 /* Services */,
+				8DA05DA5282704130005A514 /* View Models */,
+				8DA05DA42827040D0005A514 /* Models */,
 				E73361C82823FF1E009D0D9B /* ColorScheme */,
 				E334B3782822D5BD002E9640 /* ContentView.swift */,
 				FA0DC4342822F727009AC9CC /* Extension */,
@@ -156,6 +215,7 @@
 				FA0DC4322822F4E3009AC9CC /* SettingsLabelStyle.swift */,
 				D3CE07E72823334C00616F6C /* MuseView */,
 				D3CE07E32823204B00616F6C /* LottieView.swift */,
+				8DA05DA2282703A40005A514 /* NewsLetterListView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -166,6 +226,7 @@
 				FA0DC4352822F730009AC9CC /* String+BuildInfo.swift */,
 				D3CE07DC2823102600616F6C /* URLSession+APICall.swift */,
 				D3CE07E52823296A00616F6C /* View+Theme.swift */,
+				8DA05DB0282709170005A514 /* View+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -266,6 +327,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DA05DAD2827048C0005A514 /* newsletters.json in Resources */,
 				E334B37E2822D5BE002E9640 /* Preview Assets.xcassets in Resources */,
 				E334B37B2822D5BE002E9640 /* Assets.xcassets in Resources */,
 				D3CE07DF28231F8C00616F6C /* no-results-found.json in Resources */,
@@ -309,17 +371,23 @@
 				FA0DC4312822F3D5009AC9CC /* SettingsView.swift in Sources */,
 				E73361CA2823FF39009D0D9B /* ColorScheme.swift in Sources */,
 				D3CE07E92823336300616F6C /* MuseViewModel.swift in Sources */,
+				8DA05DA3282703A40005A514 /* NewsLetterListView.swift in Sources */,
+				8DA05DAA282704490005A514 /* NewsLetterService.swift in Sources */,
 				D3CE07DD2823102600616F6C /* URLSession+APICall.swift in Sources */,
 				D3CE07E62823296A00616F6C /* View+Theme.swift in Sources */,
 				FA0DC4362822F730009AC9CC /* String+BuildInfo.swift in Sources */,
 				E334B3792822D5BD002E9640 /* ContentView.swift in Sources */,
+				8DA05DA7282704200005A514 /* NewsLetter.swift in Sources */,
 				BB3B3A952826DCBC0046DC4B /* AppReviewRequest.swift in Sources */,
+				8DA05DB1282709170005A514 /* View+Extensions.swift in Sources */,
 				E334B3772822D5BD002E9640 /* Social_ContributorApp.swift in Sources */,
 				5C66C0932822ECCE00B66FF8 /* Model.xcdatamodeld in Sources */,
 				5C66C0952822ECDA00B66FF8 /* PersistenceController.swift in Sources */,
+				8DA05DB428270A4D0005A514 /* Constants.swift in Sources */,
 				D3CE07E42823204B00616F6C /* LottieView.swift in Sources */,
 				0AD87B87282307FA00904E4E /* MuseView.swift in Sources */,
 				FA0DC4332822F4E3009AC9CC /* SettingsLabelStyle.swift in Sources */,
+				8DA05DAF282705590005A514 /* NewsLetterListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,11 @@ struct ContentView: View {
                         Label("Muse", systemImage: "wand.and.stars.inverse")
                     }
             }
+            
+            NewsLetterListView() 
+                .tabItem {
+                    Label("Newsletters", systemImage: "newspaper")
+                }
 
             SettingsView()
                 .tabItem {
