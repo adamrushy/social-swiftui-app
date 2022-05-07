@@ -1,0 +1,44 @@
+
+
+[
+  {
+      "name": "iOS Dev Weekly",
+      "url": "https://iosdevweekly.com/"
+  },
+  {
+      "name": "SwiftUI Weekly",
+      "url": "http://weekly.swiftwithmajid.com/"
+  },
+  {
+      "name": "iOS Code Review",
+      "url": "https://newsletter.ioscodereview.com/"
+  },
+  {
+      "name": "Swift Senpai",
+      "url": "https://swiftsenpai.com/newsletter/"
+  },
+  {
+      "name": "Hacking With Swift",
+      "url": "https://www.hackingwithswift.com/newsletter"
+  },
+  {
+      "name": "AppCoda Weekly",
+      "url": "http://digest.appcoda.com/"
+  },
+  {
+      "name": "AppForce1",
+      "url": "https://appforce1.net/news/"
+  },
+  {
+      "name": "RayWenderlich",
+      "url": "https://www.raywenderlich.com/newsletter"
+  },
+  {
+      "name": "SwiftLee",
+      "url": "https://www.avanderlee.com/swiftlee-weekly/"
+  },
+  {
+      "name": "SarunW",
+      "url": "https://sarunw.com/newsletter/"
+  }
+]
