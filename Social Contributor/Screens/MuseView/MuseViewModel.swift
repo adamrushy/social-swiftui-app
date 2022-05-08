@@ -13,9 +13,7 @@ class MuseViewModel: ObservableObject {
 	@Published private(set) var player = ApplicationMusicPlayer.shared
 
 	@MainActor func fetchTracks() async throws {
-		let url = URL(string: "https://api.music.apple.com/v1/me/recent/played/tracks")
-
-		guard let url = url else { return }
+		let url = URL(staticString: "https://api.music.apple.com/v1/me/recent/played/tracks")
 
 		let request = MusicDataRequest(urlRequest: .init(url: url))
 		let response = try await request.response()

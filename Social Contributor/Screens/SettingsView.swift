@@ -55,9 +55,7 @@ private extension SettingsView {
     var contribution: some View {
         Section(content: {
             Button(action: {
-                guard let githubUrl = URL(string: "https://github.com/adamrushy/social-swiftui-app") else {
-                    return
-                }
+                let githubUrl = URL(staticString: "https://github.com/adamrushy/social-swiftui-app")
                 UIApplication.shared.open(githubUrl)
             }, label: {
                 NavigationLink {
