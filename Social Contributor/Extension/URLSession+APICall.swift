@@ -39,7 +39,6 @@ extension URLSession: DataProvider {
 	}
 }
 
-
 // More info at www.hackingwithswift.com
 // https://tinyurl.com/3e35jzmr
 extension URLSession {

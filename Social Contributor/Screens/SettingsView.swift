@@ -10,7 +10,19 @@ import SwiftUI
 struct SettingsView: View {
 
     @EnvironmentObject var colorSchemeManager: AppColorSchemeManager
-    @StateObject private var contributorsProvider = ContributorsProvider()
+    @StateObject private var contributorsProvider: ContributorsProvider
+
+    // This init is here to mute the following warning:
+    // "Expression requiring global actor 'MainActor' cannot appear in default-value
+    // expression of property '_contributorsProvider'; this is an error in Swift 6"
+    // when using just:
+    // @StateObject private var contributorsProvider = ContributorsProvider()
+    // See more info:
+    // https://tinyurl.com/5h2v9a75
+    // https://twitter.com/andresr_develop/status/1509287460961927186
+    init() {
+        _contributorsProvider = StateObject(wrappedValue: ContributorsProvider())
+    }
 
     var body: some View {
         NavigationView {
