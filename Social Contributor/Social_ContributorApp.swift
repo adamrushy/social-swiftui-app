@@ -18,6 +18,7 @@ struct Social_ContributorApp: App {
         WindowGroup {
             
             // This will silence the constraints errors displayed on the output window
+            // swiftlint:disable: redundant_discardable_let
             let _ = UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
             
             ContentView()
