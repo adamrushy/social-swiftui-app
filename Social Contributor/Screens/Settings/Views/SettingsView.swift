@@ -34,7 +34,7 @@ struct SettingsView: View {
             .navigationTitle(Text("Settings"))
         }
         .task {
-            await contributorsProvider.fetchContriburtors()
+            await contributorsProvider.fetchContributors()
         }
     }
 
