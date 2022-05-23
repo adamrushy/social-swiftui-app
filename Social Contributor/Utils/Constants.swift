@@ -24,11 +24,6 @@ struct Constants {
         static let newsletters = "Newsletters"
     }
 
-    struct Color {
-        static let lightBlue = "light-blue"
-        static let darkBlue = "dark-blue"
-    }
-
     struct URLPath {
         static let gitHubContributors = URL(
             staticString: "https://api.github.com/repos/adamrushy/social-swiftui-app/contributors"

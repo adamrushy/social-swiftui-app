@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject var viewModel = HomeViewModel()
+    @StateObject private var viewModel = HomeViewModel()
 
     var gradient = Gradient(
         colors: [
-            Color(Constants.Color.lightBlue),
-            Color(Constants.Color.darkBlue)
+            Color.lightBlue,
+            Color.darkBlue
         ]
     )
 
