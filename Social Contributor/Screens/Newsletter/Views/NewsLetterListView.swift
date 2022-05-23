@@ -20,7 +20,7 @@ struct NewsLetterListView: View {
                 Image(systemName: "chevron.right")
             }
         }
-        .navigationTitle("Newsletters")
+        .navigationTitle(Constants.NavigationTitle.newsletters)
         .embedInNavigationView()
         .listStyle(.plain)
         .onAppear {

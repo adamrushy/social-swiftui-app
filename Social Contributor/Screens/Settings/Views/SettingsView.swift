@@ -71,7 +71,7 @@ private extension SettingsView {
     var contribution: some View {
         Section(content: {
             Button(action: {
-                let githubUrl = URL(staticString: "https://github.com/adamrushy/social-swiftui-app")
+                let githubUrl = Constants.URLPath.gitHubProject
                 UIApplication.shared.open(githubUrl)
             }, label: {
                 NavigationLink {
@@ -83,9 +83,7 @@ private extension SettingsView {
             })
 
             Button(action: {
-                let contributorsUrl = URL(
-                    staticString: "https://github.com/adamrushy/social-swiftui-app/graphs/contributors"
-                )
+                let contributorsUrl = Constants.URLPath.gitHubContributors
                 UIApplication.shared.open(contributorsUrl)
             }, label: {
                 NavigationLink {
