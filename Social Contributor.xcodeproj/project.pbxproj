@@ -109,23 +109,6 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		8DA05DA42827040D0005A514 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8DA05DA6282704200005A514 /* NewsLetter.swift */,
-				C42E062128285DAC00C4D532 /* Contributor.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8DA05DA5282704130005A514 /* View Models */ = {
-			isa = PBXGroup;
-			children = (
-				8DA05DAE282705590005A514 /* NewsLetterListViewModel.swift */,
-			);
-			path = "View Models";
-			sourceTree = "<group>";
-		};
 		8DA05DA82827043C0005A514 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +121,8 @@
 		8DA05DAB282704790005A514 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E334B37A2822D5BE002E9640 /* Assets.xcassets */,
+				D3CE07DE28231F8C00616F6C /* no-results-found.json */,
 				8DA05DAC2827048C0005A514 /* newsletters.json */,
 			);
 			path = Resources;
@@ -146,6 +131,7 @@
 		8DA05DB228270A440005A514 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BB3B3A942826DCBC0046DC4B /* AppReviewRequest.swift */,
 				8DA05DB328270A4D0005A514 /* Constants.swift */,
 			);
 			path = Utils;
@@ -154,7 +140,7 @@
 		D3CE07E72823334C00616F6C /* MuseView */ = {
 			isa = PBXGroup;
 			children = (
-				0AD87B86282307FA00904E4E /* MuseView.swift */,
+				EA926937283BD1920083EC82 /* Views */,
 				D3CE07E82823336300616F6C /* MuseViewModel.swift */,
 			);
 			path = MuseView;
@@ -181,21 +167,16 @@
 		E334B3752822D5BD002E9640 /* Social Contributor */ = {
 			isa = PBXGroup;
 			children = (
+				E334B3782822D5BD002E9640 /* ContentView.swift */,
+				E334B3762822D5BD002E9640 /* Social_ContributorApp.swift */,
 				8DA05DB228270A440005A514 /* Utils */,
 				8DA05DAB282704790005A514 /* Resources */,
 				8DA05DA82827043C0005A514 /* Services */,
-				8DA05DA5282704130005A514 /* View Models */,
-				8DA05DA42827040D0005A514 /* Models */,
 				E73361C82823FF1E009D0D9B /* ColorScheme */,
-				E334B3782822D5BD002E9640 /* ContentView.swift */,
 				FA0DC4342822F727009AC9CC /* Extension */,
 				FA0DC42F2822F3C7009AC9CC /* Screens */,
 				5C66C0962822ECDD00B66FF8 /* CoreData */,
-				E334B3762822D5BD002E9640 /* Social_ContributorApp.swift */,
-				E334B37A2822D5BE002E9640 /* Assets.xcassets */,
-				D3CE07DE28231F8C00616F6C /* no-results-found.json */,
 				E334B37C2822D5BE002E9640 /* Preview Content */,
-				BB3B3A942826DCBC0046DC4B /* AppReviewRequest.swift */,
 			);
 			path = "Social Contributor";
 			sourceTree = "<group>";
@@ -216,14 +197,73 @@
 			path = ColorScheme;
 			sourceTree = "<group>";
 		};
-		FA0DC42F2822F3C7009AC9CC /* Screens */ = {
+		EA926935283BD10F0083EC82 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EA92693C283BD20B0083EC82 /* Models */,
+				EA926938283BD19F0083EC82 /* Views */,
+				FA0DC4322822F4E3009AC9CC /* SettingsLabelStyle.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		EA926936283BD1440083EC82 /* Newsletter */ = {
+			isa = PBXGroup;
+			children = (
+				EA92693B283BD1FB0083EC82 /* Models */,
+				EA926939283BD1EC0083EC82 /* Views */,
+				8DA05DAE282705590005A514 /* NewsLetterListViewModel.swift */,
+			);
+			path = Newsletter;
+			sourceTree = "<group>";
+		};
+		EA926937283BD1920083EC82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AD87B86282307FA00904E4E /* MuseView.swift */,
+				D3CE07E32823204B00616F6C /* LottieView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA926938283BD19F0083EC82 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				FA0DC4302822F3D5009AC9CC /* SettingsView.swift */,
-				FA0DC4322822F4E3009AC9CC /* SettingsLabelStyle.swift */,
-				D3CE07E72823334C00616F6C /* MuseView */,
-				D3CE07E32823204B00616F6C /* LottieView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA926939283BD1EC0083EC82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 				8DA05DA2282703A40005A514 /* NewsLetterListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EA92693B283BD1FB0083EC82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DA05DA6282704200005A514 /* NewsLetter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA92693C283BD20B0083EC82 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C42E062128285DAC00C4D532 /* Contributor.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA0DC42F2822F3C7009AC9CC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EA926936283BD1440083EC82 /* Newsletter */,
+				EA926935283BD10F0083EC82 /* Settings */,
+				D3CE07E72823334C00616F6C /* MuseView */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
