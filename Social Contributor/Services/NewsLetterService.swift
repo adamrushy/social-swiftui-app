@@ -11,7 +11,7 @@ class NewsLetterService {
     
     func load(_ fileName: String) -> [NewsLetter] {
         
-        guard let path = Bundle.main.path(forResource: "newsletters", ofType: "json") else {
+        guard let path = Bundle.main.path(forResource: fileName, ofType: "json") else {
             fatalError("newsletters file is not found!")
         }
         
