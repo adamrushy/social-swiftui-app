@@ -13,7 +13,7 @@ class NewsLetterListViewModel: ObservableObject {
     
     func populateAllNewsLetters() {
         
-        let newsLetters = NewsLetterService().load(Constants.FileNames.newsletters)
+        let newsLetters = NewsLetterService().load(Constants.FileName.newsletters)
         self.newsLetters = newsLetters.map(NewsLetterViewModel.init)
     }
     

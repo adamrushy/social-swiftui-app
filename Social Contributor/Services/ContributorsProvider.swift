@@ -3,12 +3,10 @@ import SwiftUI
 @MainActor final class ContributorsProvider: ObservableObject {
     @Published var contributors: String = ""
 
-    func fetchContriburtors() async {
+    func fetchContributors() async {
 
         do {
-            let url = URL(
-                staticString: "https://api.github.com/repos/adamrushy/social-swiftui-app/contributors"
-            )
+            let url = Constants.URLPath.gitHubContributors
             let response = try await URLSession.shared.decode(
                 [Contributor].self,
                 from: url,
