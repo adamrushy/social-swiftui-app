@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SettingsView: View {
-
+    
+    @State private var showIconSheet = false
     @EnvironmentObject var colorSchemeManager: AppColorSchemeManager
     @StateObject private var contributorsProvider: ContributorsProvider
 
@@ -30,6 +31,7 @@ struct SettingsView: View {
                 general
                 about
                 contribution
+                iconSwitcher
             }
             .navigationTitle(Text("Settings"))
         }
@@ -111,5 +113,27 @@ private extension SettingsView {
             Label("Version " + String.basicBuildInfo(), systemImage: "terminal.fill")
                 .labelStyle(SettingsLabelStyle(backgroundColor: .blue))
         }
+    }
+    
+    var iconSwitcher: some View{
+        Button(action:{
+            showIconSheet.toggle()
+        }) {
+            HStack(spacing: 8){
+                Image(systemName: "paperplane")
+                
+                Text("Change App Icon").kerning(1)
+                    .foregroundColor(.white)
+                
+                Spacer()
+                
+                Image(systemName: "chevron.right")
+                
+            }
+            .padding(.vertical, 10)
+            
+        }.sheet(isPresented: $showIconSheet){
+            IconSelectionView()
+        }.environmentObject(IconNames())
     }
 }
