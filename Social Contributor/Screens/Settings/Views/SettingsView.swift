@@ -121,13 +121,14 @@ private extension SettingsView {
         }) {
             HStack(spacing: 8){
                 Image(systemName: "paperplane")
-                
+                    .foregroundColor(.gray)
                 Text("Change App Icon").kerning(1)
                     .foregroundColor(.white)
                 
                 Spacer()
                 
                 Image(systemName: "chevron.right")
+                    .foregroundColor(.gray)
                 
             }
             .padding(.vertical, 10)
